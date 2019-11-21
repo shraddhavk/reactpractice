@@ -3,11 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import LoginControl from './LoginControl';
 
-
-  
   ReactDOM.render(
-    <App />,
+    <LoginControl />,
     document.getElementById('root')
   );
 
