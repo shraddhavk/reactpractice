@@ -3,6 +3,7 @@ import './App.css';
 import Clock from './clock';
 
 
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -20,9 +21,16 @@ class App extends React.Component {
 
   render() {
     return (
-      <button onClick={this.handleClick}>
-        {this.state.isToggleOn ? 'ON' : 'OFF'}
-      </button>
+      <div>
+        <form>
+          <label>
+              Name:
+              <input type="text" name="name" />
+          </label>
+          <input type="submit" value="Submit" />
+      </form>
+     </div>
+      
     );
   }
 }
