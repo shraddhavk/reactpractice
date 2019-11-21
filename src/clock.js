@@ -2,6 +2,7 @@ import React from 'react';
 function FormattedDate(props) {
     return <h2>It is {props.date.toLocaleTimeString()}.</h2>;
   }
+
 class Clock extends React.Component {
     constructor(props) {
       super(props);
@@ -30,6 +31,9 @@ class Clock extends React.Component {
         <div>
           <h1>Hello, world!</h1>
           <FormattedDate date={this.state.date} />
+          <a href="#" onClick="console.log('The link was clicked.'); return false">
+             Click me
+          </a>
         </div>
       );
     }
